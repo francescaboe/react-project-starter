@@ -1,5 +1,5 @@
 # React Typescript Webpack Starter
-### Branch: simple-starter-no-libs
+### Branch: 1_simple-starter-no-libs
 bare project with react, typescript, webpack
 
 ## Simple starter
