@@ -1,7 +1,8 @@
 # React Typescript Webpack Starter
-### Branch:  simple-starter-no-libs
+### Branch: simple-starter-no-libs
 bare project with react, typescript, webpack
 
+## Simple starter
 (from https://dev.to/alekseiberezkin/setting-up-react-typescript-app-without-create-react-app-oph)
 1. initialize: `npm init`
 2. install ts: `npm i --save-dev typescript`
