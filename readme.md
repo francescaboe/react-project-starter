@@ -34,4 +34,4 @@ Project structure
   ```
 
 // todo: 
-[ ] add favicon!
+- [ ] add favicon!
