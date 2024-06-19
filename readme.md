@@ -1,5 +1,9 @@
 
 # React Typescript Webpack Starter
+### branch: starter-with-linters
+Adds eslint and prettier with config files
+
+## Simple starter
 (from https://dev.to/alekseiberezkin/setting-up-react-typescript-app-without-create-react-app-oph)
 1. initialize: `npm init`
 2. install ts: `npm i --save-dev typescript`
@@ -32,6 +36,14 @@ Project structure
     ├── tsconfig.json
     ├── webpack.config.js
   ```
+
+## Prettier and Eslint
+1. ```npm init @eslint/config``` it will create an eslint configs file
+   (when asked to install necessary libraries, remember you need an older version of eslint, the latest is incompatible w react!)
+2. remember to add prettier among the rules, so eslint knows to follow the prettier styling rules 
+3. add .eslintignore (see file here for details)
+4. ```npm i --save-dev prettier eslint-config-prettier eslint-plugin-prettier```
+5. add .prettierrc.js with preferred rules (see file here for details)
 
 // todo: 
 - [ ] add favicon!
