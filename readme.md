@@ -1,4 +1,3 @@
-
 # React Typescript Webpack Starter
 ### branch: starter-with-linters
 Adds eslint and prettier with config files
