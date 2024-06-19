@@ -34,5 +34,4 @@ Project structure
   ```
 
 // todo: 
-[ ] add favicon
-[ ] fix index.css error
+[ ] add favicon!
