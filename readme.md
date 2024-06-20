@@ -1,6 +1,6 @@
 # React Typescript Webpack Starter
-### branch: 2_starter-with-linters
-Adds eslint and prettier with config files
+### branch: 3_starter-linters-tailwind
+Adds tailwind
 
 ## Simple starter
 (from https://dev.to/alekseiberezkin/setting-up-react-typescript-app-without-create-react-app-oph)
@@ -44,5 +44,7 @@ Project structure
 4. ```npm i --save-dev prettier eslint-config-prettier eslint-plugin-prettier```
 5. add .prettierrc.js with preferred rules (see file here for details)
 
+## Tailwind
+ add instructions here
 // todo: 
 - [ ] add favicon!
