@@ -1,5 +1,5 @@
 # React Typescript Webpack Starter
-### branch: 3_starter-linters-tailwind
+### branch: 4_starter-linters-tailwind_testing
 Adds tailwind
 
 ## Simple starter
