@@ -1,6 +1,6 @@
 # React Typescript Webpack Starter
 ### branch: 4_starter-linters-tailwind_testing
-Adds tailwind
+Adds jest and rtl
 
 ## Simple starter
 (from https://dev.to/alekseiberezkin/setting-up-react-typescript-app-without-create-react-app-oph)
