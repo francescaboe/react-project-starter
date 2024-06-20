@@ -36,5 +36,7 @@ Project structure
     ├── webpack.config.js
   ```
 
+// to remove node_modules from cmd: ```npx rimraf node_modules```
+
 // todo: 
 - [ ] add favicon!
