@@ -1,5 +1,5 @@
 # React Typescript Webpack Starter
-### branch: 4_starter-linters-tailwind_testing
+### branch: 4_starter-linters-tailwind-testing
 Adds jest and rtl
 
 ## Simple starter
