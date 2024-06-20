@@ -82,6 +82,9 @@ RTL & Jest
 
 
 // to remove node_modules from cmd: ```npx rimraf node_modules```
+// to clone this repo without .git folder (#preferred-branch)
+```degit francescaboe/react-project-starter#4_starter_linters_tailwind_testing  my-new-project```
+
 
 // todo: 
 - [ ] add favicon!
