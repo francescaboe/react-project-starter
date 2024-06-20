@@ -44,5 +44,7 @@ Project structure
 4. ```npm i --save-dev prettier eslint-config-prettier eslint-plugin-prettier```
 5. add .prettierrc.js with preferred rules (see file here for details)
 
+// to remove node_modules from cmd: ```npx rimraf node_modules```
+
 // todo: 
 - [ ] add favicon!
