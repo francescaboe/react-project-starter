@@ -30,7 +30,7 @@ module.exports = {
         test: /\.css$/i,
         // only apply the specified loaders to CSS files located within the src directory
         include: path.resolve(__dirname, 'src'),
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader'],
       },
     ],
   },

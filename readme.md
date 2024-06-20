@@ -45,7 +45,13 @@ Project structure
 5. add .prettierrc.js with preferred rules (see file here for details)
 
 ## Tailwind
- add instructions here
+1. ```npm i --save-dev tailwindcss postcss autoprefixer postcss-loader postcss-preset-env``` and whatever else the error complains about
+2. ```npx tailwindcss init``` (see file here for details)
+3. create postcss.config.js (see file here for details)
+4. add postcss to webpack (see file here for details)
+5. add ```@tailwind base;
+   @tailwind components;
+   @tailwind utilities;``` to src/index.css
 
 
 // to remove node_modules from cmd: ```npx rimraf node_modules```
