@@ -38,7 +38,7 @@ Project structure
 
 ## Prettier and Eslint
 1. ```npm init @eslint/config``` it will create an eslint configs file
-   (when asked to install necessary libraries, remember you need an older version of eslint, the latest is incompatible w react!)
+   (when asked to install necessary libraries, remember you need an older version of eslint, the latest is incompatible w eslint-plugin-react! - for now) 
 2. remember to add prettier among the rules, so eslint knows to follow the prettier styling rules 
 3. add .eslintignore (see file here for details)
 4. ```npm i --save-dev prettier eslint-config-prettier eslint-plugin-prettier```
@@ -46,5 +46,9 @@ Project structure
 
 ## Tailwind
  add instructions here
+
+
+// to remove node_modules from cmd: ```npx rimraf node_modules```
+
 // todo: 
 - [ ] add favicon!
