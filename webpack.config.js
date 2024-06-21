@@ -55,6 +55,7 @@ module.exports = {
     // This is especially useful for including the generated bundles automatically.
     new HtmlWebpackPlugin({
       template: './public/index.html', // Specifies the HTML template to use.
+      favicon: './public/favicon.png',
     }),
     // MiniCssExtractPlugin extracts CSS into separate files.
     // It creates a CSS file per JS file which contains CSS.
@@ -64,7 +65,7 @@ module.exports = {
   devServer: {
     // Specifies the directory where the static files are located.
     static: {
-      directory: path.resolve(__dirname, 'dist'), // Use path.resolve for absolute paths
+      directory: path.resolve(__dirname, 'public'), // Use path.resolve for absolute paths
     },
     // Enables Hot Module Replacement, which allows for modules to be updated at runtime without a full refresh.
     hot: true,
