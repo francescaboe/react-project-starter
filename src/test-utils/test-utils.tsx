@@ -44,6 +44,7 @@ const customRender = (ui: ReactElement, options?: Omit<RenderOptions, 'wrapper'>
 
 // Export all from @testing-library/react and the custom render function
 export * from '@testing-library/react';
+export * from '@testing-library/user-event'; // supercharged fireEvent
 export { customRender as render };
 
 // import in test files as: import { render, ..any-other-testing-lib-method } from 'test-utils';
