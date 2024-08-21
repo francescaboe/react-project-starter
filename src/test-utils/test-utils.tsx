@@ -5,10 +5,10 @@ import { render, RenderOptions } from '@testing-library/react';
 // if the project is using react router and i18next, then the following imports are required, in order to add the providers to the custom render:
 
 // REACT ROUTER
-/*import { BrowserRouter } from 'react-router-dom';*/
+import { BrowserRouter } from 'react-router-dom';
 
 // I18NEXT
-/*
+
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import { I18nextProvider } from 'react-i18next';
@@ -25,16 +25,16 @@ i18n.use(initReactI18next).init({
       translations: enTranslations,
     },
   },
-});*/
+});
 
 // Wrapper component to provide BrowserRouter, i18n and any other necessary providers later on
 const AllTheProviders = ({ children }: { children: React.ReactNode }) => {
   return (
-    /*<BrowserRouter>
-      <I18nextProvider i18n={i18n}>*/
-    <>{children}</>
-    /*      </I18nextProvider>
-    </BrowserRouter>*/
+    <BrowserRouter>
+      <I18nextProvider i18n={i18n}>
+        <>{children}</>
+      </I18nextProvider>
+    </BrowserRouter>
   );
 };
 

@@ -17,6 +17,7 @@ module.exports = {
   output: {
     // The path where the output files will be placed.
     path: path.resolve(__dirname, 'dist'), // Use path.resolve for absolute paths
+    publicPath: '/', // Specifies the public URL of the output directory when referenced in a browser. ???? verify this
   },
   module: {
     // Determines how different file types should be processed.
@@ -64,6 +65,8 @@ module.exports = {
   ],
   // Sets up the development server configuration.
   devServer: {
+    // necessary when using routes with react-router
+    historyApiFallback: true,
     // Specifies the directory where the static files are located.
     static: {
       directory: path.resolve(__dirname, 'public'), // Use path.resolve for absolute paths

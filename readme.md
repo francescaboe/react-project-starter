@@ -85,7 +85,8 @@ RTL & Jest
 
 ## React Router
 1. ```npm i react-router-dom```
-2. create routes like so:
+2. add  historyApiFallback: true, to webpack.config.js (see file here for details)
+3. create routes like so:
 
 ```tsx
 // src/App.tsx or AppRoutes.tsx if you want to separate them
