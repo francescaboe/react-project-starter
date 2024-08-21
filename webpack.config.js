@@ -79,6 +79,8 @@ module.exports = {
     alias: {
       components: path.resolve(__dirname, 'src/components'),
       utils: path.resolve(__dirname, 'src/utils'),
+      // not strictly necessary, but it's good for consistency
+      'test-utils': path.resolve(__dirname, 'src/test-utils/test-utils.tsx'),
     },
   },
 };

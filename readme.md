@@ -61,8 +61,10 @@ using
 ```tsx
 // src/App.test.tsx
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom/extend-expect';
+import { render, screen } from 'test-utils';
+// use this instead if not using custom test-utils
+// import { render, screen } from '@testing-library/react'; (1)
+// import '@testing-library/jest-dom/extend-expect'; (2)
 import App from '../App';
 
 test('renders welcome message', () => {
@@ -79,12 +81,26 @@ RTL & Jest
 5. add test script to package.json
 6. see App.test.tsx for example test file
 7. make sure webpack is handling css correctly (see webpack configs)
+8. see test-utils.tsx for custom render function
 
 
-// to remove node_modules from cmd: ```npx rimraf node_modules```
-// to clone this repo without .git folder (#preferred-branch)
-```degit francescaboe/react-project-starter#4_starter_linters_tailwind_testing  my-new-project```
-
-
-// todo: 
-- [ ] add favicon!
+## OTHER
+- to correctly load favicon add this to webpack config:
+```js
+    new HtmlWebpackPlugin({
+      favicon: './public/favicon.png',
+        })
+```
+- to kill port 3000:
+```
+npx kill-port 3000
+```
+- 
+- to remove node_modules from cmd: 
+```
+npx rimraf node_modules
+```
+- to clone this repo without .git folder (#preferred-branch):
+```
+degit francescaboe/react-project-starter#4_starter_linters_tailwind_testing  my-new-project
+```
