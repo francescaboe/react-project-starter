@@ -1,5 +1,5 @@
 # React Typescript Webpack Starter
-### branch: 4_starter-linters-tailwind-testing
+### branch: 5_starter-linters-tailwind-testing_rest
 Adds jest and rtl
 
 ## Simple starter
@@ -83,8 +83,48 @@ RTL & Jest
 7. make sure webpack is handling css correctly (see webpack configs)
 8. see test-utils.tsx for custom render function
 
+## React Router
+1. ```npm i react-router-dom```
+2. create routes like so:
+
+```tsx
+// src/App.tsx or AppRoutes.tsx if you want to separate them
+import React from'react';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
+import ErrorBoundary from 'components/ErrorBoundary';
+
+const router = createHashRouter([
+   {
+      path: '/',
+      element: <Home />,
+   },
+   {
+      path: '/my-route',
+      element: (
+              <ErrorBoundary>
+                 <MyOtherRoute />
+              </ErrorBoundary>
+      ),
+   },
+   {
+      path: '*',
+      element: <NotFound />,
+   },
+]);
+const AppRoutes = () => <RouterProvider router={router} />;
+
+export default AppRoutes;
+````
+
+## i18n
+1. ```npm i react-i18next i18next-http-backend react-i18next```
+2. configure i18n (see src/i18n.js for details)
+3. add import './i18n' to src/index.tsx (or provider)
+4. add translation files to public/locales
+5. make sure to align test-utils or add i18n instance to test files
 
 ## OTHER
+- see ErrorBoundary.tsx for example of error boundary
 - to correctly load favicon add this to webpack config:
 ```js
     new HtmlWebpackPlugin({
