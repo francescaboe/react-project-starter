@@ -123,6 +123,8 @@ export default AppRoutes;
 3. add import './i18n' to src/index.tsx (or provider)
 4. add translation files to public/locales
 5. make sure to align test-utils or add i18n instance to test files
+6. npm install copy-webpack-plugin --save-dev
+7. add const CopyWebpackPlugin to webpack.config.js (see file here for details)
 
 ## OTHER
 - see ErrorBoundary.tsx for example of error boundary
